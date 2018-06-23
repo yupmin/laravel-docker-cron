@@ -1,0 +1,9 @@
+version: '2'
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    working_dir: /var/www/html
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
